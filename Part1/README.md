@@ -38,7 +38,7 @@ The lab provides:
 
 - `student_dataset.hdf5`: validation dataset in HDF5 format.
 - `model_2023-03-28_20-03.pth`: pretrained PyTorch model weights.
-- `requirements.txt`: Python dependencies needed to run the notebook.
+- `requirements.txt`: dependency file used to recreate the Python environment for this notebook.
 - `LAB-Intro.pdf`: lab description and task instructions.
 
 The dataset contains code samples represented as numeric vectors. Each sample has a binary label:
@@ -83,6 +83,8 @@ The model outputs a probability between 0 and 1. A threshold of `0.5` is used:
 
 - probability >= 0.5 means vulnerable
 - probability < 0.5 means non-vulnerable
+
+The threshold of `0.5` is the default decision threshold for binary classification. We kept this threshold because the task is to evaluate the provided pretrained model, not to retrain or optimize it. A lower threshold could increase recall, but it would also create more false positives.
 
 Batch processing is done with `DataLoader` using batch size `64`, which allows the model to process multiple samples efficiently during inference.
 
@@ -132,6 +134,8 @@ Recall = 0.071
 This means the model finds only a small fraction of the actually vulnerable samples.
 
 For vulnerability prediction, recall is very important because missing a real vulnerability can be more harmful than raising a false alarm. F1-score is more informative than accuracy because it combines precision and recall, but recall should still be inspected directly.
+
+The low recall also shows an important limitation of the provided pretrained model at the default threshold. The model is very conservative: when it predicts vulnerable, it is usually correct, but it misses many actual vulnerable examples. In a real security setting, this threshold might be adjusted depending on whether the priority is fewer false alarms or fewer missed vulnerabilities.
 
 ### How To Run
 
