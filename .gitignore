@@ -1,0 +1,30 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment folders
+.venv/
+ai_env/
+
+# Part 2 temporary mining folders and logs
+Part2/ProjectKB/
+Part2/mining_outputs/
+Part2/mining_outputs_retry_backup_*/
+Part2/retry_outputs/
+Part2/task3_mining.log
+Part2/task3_mining_error.log
+Part2/task3_mining_status.json
+
+
+# Part 3 local/cache outputs
+Part3/.ipynb_checkpoints/
