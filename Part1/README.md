@@ -7,7 +7,6 @@ This folder contains the solution for Part 1 of the Cybersecurity Data Science P
 ```text
 Part1/
 |-- CDS_project_part1.ipynb
-|-- LAB-Intro.pdf
 |-- model_2023-03-28_20-03.pth
 |-- requirements.txt
 |-- student_dataset.hdf5
@@ -39,7 +38,6 @@ The lab provides:
 - `student_dataset.hdf5`: validation dataset in HDF5 format.
 - `model_2023-03-28_20-03.pth`: pretrained PyTorch model weights.
 - `requirements.txt`: dependency file used to recreate the Python environment for this notebook.
-- `LAB-Intro.pdf`: lab description and task instructions.
 
 The dataset contains code samples represented as numeric vectors. Each sample has a binary label:
 

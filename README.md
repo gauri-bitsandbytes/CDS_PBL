@@ -1,7 +1,4 @@
-[README.md](https://github.com/user-attachments/files/29944433/README.md)
-# CDS_PBL
-Cybersecurity Data Science course - Project
-# Cybersecurity Data Science PBL
+﻿# Cybersecurity Data Science PBL
 
 This repository contains the three parts of the Cybersecurity Data Science PBL project. The project starts with evaluating a provided vulnerability prediction model, then builds a labeled vulnerability dataset from ProjectKB, and finally trains a machine-learning model to predict vulnerable source-code functions.
 
@@ -15,12 +12,10 @@ This repository contains the three parts of the Cybersecurity Data Science PBL p
 
 ```text
 CDS_PBL/
-|-- LAB-Intro.pdf
 |-- README.md
 |-- .gitignore
 |-- Part1/
 |   |-- CDS_project_part1.ipynb
-|   |-- LAB-Intro.pdf
 |   |-- README.md
 |   |-- model_2023-03-28_20-03.pth
 |   |-- requirements.txt
@@ -239,3 +234,4 @@ Part3/CDS_project_part3.ipynb
 ```
 
 Part 3 is best reviewed through the linked Google Colab notebook mentioned in `Part3/README.md`.
+
